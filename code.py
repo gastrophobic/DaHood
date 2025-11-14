@@ -161,7 +161,7 @@ def run(json_data, start_key, start_key2, addon, addon2, skip, game_pre, display
                     return json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names   
                 case 6:
                     start_key = "normal head"
-                    addon2 = "6ca1adf1341ce774f3c889a06944293b"
+                    addon2 = "c10419cc02d6a253a4aad0bd8fbdda6b"
                     return json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names  
         except Exception as e:
             print(f"{Fore.RED}An error occurred: {e}{Style.RESET_ALL}")
