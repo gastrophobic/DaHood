@@ -63,10 +63,11 @@ def run(json_data, start_key, start_key2, addon, addon2, skip, game_pre, display
                         f"3:  {Fore.GREEN}Gun Sounds{Style.RESET_ALL}\n"
                         f"4:  {Fore.GREEN}CLIENT avatar tweaks{Style.RESET_ALL}\n"
                         f"5:  {Fore.GREEN}eating sound{Style.RESET_ALL}\n"
+                        f"6:  {Fore.GREEN}anti headless abuse{Style.RESET_ALL}\n"
                         f"{Fore.MAGENTA}</> : if ur selling this find a job{Style.RESET_ALL}\n"
                         f"{Fore.BLUE}</> : if you bought this ur a retard and got scammed{Style.RESET_ALL}\n"
                         f"Type 'back' to return to the previous menu.\n: ",
-                        valid_values=[0, 1, 2, 3, 4, 5 ]
+                        valid_values=[0, 1, 2, 3, 4, 5, 6 ]
         )
         if options == 'back':
             print(f"{Fore.CYAN}\nReturning to main menu.{Style.RESET_ALL}")
@@ -157,6 +158,10 @@ def run(json_data, start_key, start_key2, addon, addon2, skip, game_pre, display
                 case 5:
                     start_key = "eating sound"
                     start_key2 = "replacement sounds"
-                    return json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names                    
+                    return json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names   
+                case 6:
+                    start_key = "111"
+                    addon2 = "6ca1adf1341ce774f3c889a06944293b"
+                    return json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names  
         except Exception as e:
             print(f"{Fore.RED}An error occurred: {e}{Style.RESET_ALL}")
