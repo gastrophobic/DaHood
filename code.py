@@ -160,7 +160,7 @@ def run(json_data, start_key, start_key2, addon, addon2, skip, game_pre, display
                     start_key2 = "replacement sounds"
                     return json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names   
                 case 6:
-                    start_key = "111"
+                    start_key = "normal head"
                     addon2 = "6ca1adf1341ce774f3c889a06944293b"
                     return json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names  
         except Exception as e:
